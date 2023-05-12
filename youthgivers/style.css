@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #F6DDCC;
+}
+header .carousel-inner .item {
+	height: 100vh;
+}
+.navbar-inverse {
+	background-color:#ff5733;
+	border-color: gold solid;
+	
+}
+.navbar-inverse .navbar-brand {
+	color:aqua;
+	font-size: 40px;
+	padding: 40px 15px;
+	font-weight: 900;
+}
+.nav.navbar-nav.navbar-right {
+	margin: 25px 0;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+	text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: solid;	
+}
+.link:hover{
+  color: gold;
+  background: #ec2f04;
+  padding: 0;
+  border-radius: 10px;
+}
+/* END of nevbar */
+
+.banner {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+
+}
+ 
+/* Home page style */
+.carousel-caption {
+	padding-top: 180px;
+	/* background: rgba(110, 185, 236, 0.5);
+	background-size: cover; */
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.carousel-caption h2 {
+	font-size: 70px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color:#ff5733;
+}
+.carousel-caption h3{
+	color:gold;
+	font-weight: bold;
+}
+.carousel-caption h2 span {
+	color: #EDBB00;
+}
+.carousel-caption a {
+	background:#ff5733 ;
+	padding: 15px 35px;
+	display: inline-block;
+	margin-top: 15px;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 25px;
+}
+.carousel-control.right {
+	background-image: none;
+}
+.carousel-control.left {
+	background-image: none;
+}
+.carousel-indicators .active {
+	background-color: #EDBB00;
+	border-color: #EDBB00;
+}
+/*responsive css*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		padding-bottom: 350px;
+	}
+	.carousel-caption h2 {
+		font-size: 50px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-inverse .navbar-brand {
+		font-size: 30px;
+		padding: 20px 15px;
+	}
+	.navbar-collapse {
+		background: rgba(255,30,0, 0.5);
+	}
+	.carousel-caption {
+		padding-bottom: 120px;
+	}
+	.carousel-caption h2 {
+		font-size: 25px;
+	}
+	.carousel-caption h3 {
+		font-size: 18px;
+	}
+	.carousel-caption a {
+		padding: 10px 25px;
+	}
+}
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  background: #ddbda7;
+}
+
+.team .member img {
+  max-width: 60%;
+  border-radius: 50%;
+  margin: 0 0 30px 0;
+}
+
+.team .member h4 {
+  font-weight: bold;
+  margin-bottom: 2px;
+  font-size: 18px;
+	color:#ec350c;
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+.team .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: black;
+}
+
+/* Servicies section */
+.wrapper{
+  display: flex;
+	margin-left: 25px;
+}
+.wrapper .static-txt{
+  color: black;
+  font-size: 60px;
+  font-weight: bolder;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #ff5733;
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #F6DDCC;
+  border-left: 2px solid #ff5733;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info-wrap {
+  padding: 30px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #3498db;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eaf4fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #384046;
+}
+
+.contact .info p {
+  padding: 0 0 0 45px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #65747f;
+}
+
+.contact.info:hover i {
+  background: #3498db;
+  color: #fff;
+}
+
+/* IDEA: SOCIAL ICONS */
+.social a {
+	font-size: 4.5em;
+	padding: 3rem;
+}
+.fa-facebook {
+	color: #3b5998;
+}
+/* .fa-whatsapp {
+	color: green;
+}
+.fa-twitter {
+	color: #00aced;
+} */
+/* .fa-facebook: hover,
+.fa-whatsapp: hover,
+.fa-twitter: hover{
+color: pink;
+} */
+/* Footer */
+footer {
+  background-color: black;
+  color: #d5d5d5;
+  padding-top: 3rem;
+}
+hr.light {
+border-top: 1px solid #d5d5d5;
+width: 100%;
+margin-top: .8rem;  
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+  .navbar-header img {
+  width: 200px;
+  height: auto;
+  }
+  .carousel-inner img{
+  width: 100%;
+  height: 200px;
+  padding-right: 25px;
+}
+.navbar-header span{
+	color: black;
+}
+.wrapper {
+  display: none;
+}
+.social a{
+  font-size: 3em;
+  padding: .7rem;
+}
+}
+
